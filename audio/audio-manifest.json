@@ -6,15 +6,15 @@
     "Paths are relative to basePath (public/audio/ in the repo; import.meta.env.BASE_URL + 'audio/' at runtime).",
     "Looping assets: decode with Web Audio and set source.loop=true, source.loopStart=loopStartSec, source.loopEnd=loopEndSec.",
     "Do not loop music/ambience with HTMLAudioElement.loop: it plays the pre/post-roll and is not gapless on Safari.",
-    "Levels: music -18 LUFS integrated, ambience -30 LUFS, SFX normalised by loudest 100 ms window (-16 dB; UI -21, dialogue -23, footsteps -21); music <= -1.5 dBTP, SFX <= -3 dBTP."
+    "Levels: music -18 LUFS integrated, ambience -30 LUFS, SFX normalised by loudest 100 ms window (-16 dB; UI -21, dialogue -23, footsteps -33 (path -34) via footsteps.py); music <= -1.5 dBTP, SFX <= -3 dBTP."
   ],
   "totals": {
     "files": 52,
-    "bytes": 6715327,
+    "bytes": 6717831,
     "byCategory": {
       "music": 4932019,
       "ambience": 1465779,
-      "sfx": 317529
+      "sfx": 320033
     }
   },
   "sfxGroups": {
@@ -487,13 +487,13 @@
       "bitrateKbps": 96,
       "channels": 1,
       "sampleRate": 44100,
-      "bytes": 3448,
-      "fileDurationSec": 0.22,
+      "bytes": 3761,
+      "fileDurationSec": 0.26,
       "loop": false,
-      "peakMomentaryDb": -21.01,
-      "truePeakDbtp": -9.73,
-      "source": "scripts/audio/sfx.py",
-      "licence": "Original work created for High Harvest; synthesised entirely in code by scripts/audio (no samples, recordings, loops or third-party presets). Owned by the High Harvest project."
+      "peakMomentaryDb": -33.0,
+      "truePeakDbtp": -18.83,
+      "source": "scripts/audio/footsteps.py from Kenney footstep_grass_001 (CC0 recording)",
+      "licence": "CC0 1.0 Universal (public domain dedication); no attribution required. Processed for High Harvest by PIXEL."
     },
     {
       "key": "sfx_footstep_dirt_2",
@@ -504,13 +504,13 @@
       "bitrateKbps": 96,
       "channels": 1,
       "sampleRate": 44100,
-      "bytes": 3448,
-      "fileDurationSec": 0.22,
+      "bytes": 3761,
+      "fileDurationSec": 0.26,
       "loop": false,
-      "peakMomentaryDb": -21.0,
-      "truePeakDbtp": -10.59,
-      "source": "scripts/audio/sfx.py",
-      "licence": "Original work created for High Harvest; synthesised entirely in code by scripts/audio (no samples, recordings, loops or third-party presets). Owned by the High Harvest project."
+      "peakMomentaryDb": -33.0,
+      "truePeakDbtp": -18.09,
+      "source": "scripts/audio/footsteps.py from Kenney footstep_grass_002 (CC0 recording, speed x0.98)",
+      "licence": "CC0 1.0 Universal (public domain dedication); no attribution required. Processed for High Harvest by PIXEL."
     },
     {
       "key": "sfx_footstep_dirt_3",
@@ -521,13 +521,13 @@
       "bitrateKbps": 96,
       "channels": 1,
       "sampleRate": 44100,
-      "bytes": 3448,
-      "fileDurationSec": 0.22,
+      "bytes": 3761,
+      "fileDurationSec": 0.26,
       "loop": false,
-      "peakMomentaryDb": -21.0,
-      "truePeakDbtp": -10.19,
-      "source": "scripts/audio/sfx.py",
-      "licence": "Original work created for High Harvest; synthesised entirely in code by scripts/audio (no samples, recordings, loops or third-party presets). Owned by the High Harvest project."
+      "peakMomentaryDb": -33.0,
+      "truePeakDbtp": -17.86,
+      "source": "scripts/audio/footsteps.py from Kenney footstep_grass_003 (CC0 recording)",
+      "licence": "CC0 1.0 Universal (public domain dedication); no attribution required. Processed for High Harvest by PIXEL."
     },
     {
       "key": "sfx_footstep_dirt_4",
@@ -538,13 +538,13 @@
       "bitrateKbps": 96,
       "channels": 1,
       "sampleRate": 44100,
-      "bytes": 3448,
-      "fileDurationSec": 0.22,
+      "bytes": 3761,
+      "fileDurationSec": 0.26,
       "loop": false,
-      "peakMomentaryDb": -21.0,
-      "truePeakDbtp": -6.73,
-      "source": "scripts/audio/sfx.py",
-      "licence": "Original work created for High Harvest; synthesised entirely in code by scripts/audio (no samples, recordings, loops or third-party presets). Owned by the High Harvest project."
+      "peakMomentaryDb": -33.0,
+      "truePeakDbtp": -18.01,
+      "source": "scripts/audio/footsteps.py from Kenney footstep_grass_004 (CC0 recording, speed x1.02)",
+      "licence": "CC0 1.0 Universal (public domain dedication); no attribution required. Processed for High Harvest by PIXEL."
     },
     {
       "key": "sfx_footstep_grass_1",
@@ -555,13 +555,13 @@
       "bitrateKbps": 96,
       "channels": 1,
       "sampleRate": 44100,
-      "bytes": 3448,
-      "fileDurationSec": 0.22,
+      "bytes": 3761,
+      "fileDurationSec": 0.26,
       "loop": false,
-      "peakMomentaryDb": -21.0,
-      "truePeakDbtp": -11.0,
-      "source": "scripts/audio/sfx.py",
-      "licence": "Original work created for High Harvest; synthesised entirely in code by scripts/audio (no samples, recordings, loops or third-party presets). Owned by the High Harvest project."
+      "peakMomentaryDb": -33.0,
+      "truePeakDbtp": -19.43,
+      "source": "scripts/audio/footsteps.py from Fantozzi-SandL1 (CC0 recording)",
+      "licence": "CC0 1.0 Universal (public domain dedication); no attribution required. Processed for High Harvest by PIXEL."
     },
     {
       "key": "sfx_footstep_grass_2",
@@ -572,13 +572,13 @@
       "bitrateKbps": 96,
       "channels": 1,
       "sampleRate": 44100,
-      "bytes": 3448,
-      "fileDurationSec": 0.22,
+      "bytes": 3761,
+      "fileDurationSec": 0.26,
       "loop": false,
-      "peakMomentaryDb": -21.0,
-      "truePeakDbtp": -10.24,
-      "source": "scripts/audio/sfx.py",
-      "licence": "Original work created for High Harvest; synthesised entirely in code by scripts/audio (no samples, recordings, loops or third-party presets). Owned by the High Harvest project."
+      "peakMomentaryDb": -33.0,
+      "truePeakDbtp": -20.33,
+      "source": "scripts/audio/footsteps.py from Fantozzi-SandL2 (CC0 recording, speed x0.98)",
+      "licence": "CC0 1.0 Universal (public domain dedication); no attribution required. Processed for High Harvest by PIXEL."
     },
     {
       "key": "sfx_footstep_grass_3",
@@ -589,13 +589,13 @@
       "bitrateKbps": 96,
       "channels": 1,
       "sampleRate": 44100,
-      "bytes": 3448,
-      "fileDurationSec": 0.22,
+      "bytes": 3761,
+      "fileDurationSec": 0.26,
       "loop": false,
-      "peakMomentaryDb": -21.0,
-      "truePeakDbtp": -9.75,
-      "source": "scripts/audio/sfx.py",
-      "licence": "Original work created for High Harvest; synthesised entirely in code by scripts/audio (no samples, recordings, loops or third-party presets). Owned by the High Harvest project."
+      "peakMomentaryDb": -33.0,
+      "truePeakDbtp": -23.16,
+      "source": "scripts/audio/footsteps.py from Fantozzi-SandR1 (CC0 recording)",
+      "licence": "CC0 1.0 Universal (public domain dedication); no attribution required. Processed for High Harvest by PIXEL."
     },
     {
       "key": "sfx_footstep_grass_4",
@@ -606,13 +606,13 @@
       "bitrateKbps": 96,
       "channels": 1,
       "sampleRate": 44100,
-      "bytes": 3448,
-      "fileDurationSec": 0.22,
+      "bytes": 3761,
+      "fileDurationSec": 0.26,
       "loop": false,
-      "peakMomentaryDb": -21.0,
-      "truePeakDbtp": -12.26,
-      "source": "scripts/audio/sfx.py",
-      "licence": "Original work created for High Harvest; synthesised entirely in code by scripts/audio (no samples, recordings, loops or third-party presets). Owned by the High Harvest project."
+      "peakMomentaryDb": -33.0,
+      "truePeakDbtp": -17.65,
+      "source": "scripts/audio/footsteps.py from Fantozzi-SandR3 (CC0 recording, speed x1.02)",
+      "licence": "CC0 1.0 Universal (public domain dedication); no attribution required. Processed for High Harvest by PIXEL."
     },
     {
       "key": "sfx_footstep_path_1",
@@ -626,10 +626,10 @@
       "bytes": 3448,
       "fileDurationSec": 0.22,
       "loop": false,
-      "peakMomentaryDb": -21.01,
-      "truePeakDbtp": -8.49,
-      "source": "scripts/audio/sfx.py",
-      "licence": "Original work created for High Harvest; synthesised entirely in code by scripts/audio (no samples, recordings, loops or third-party presets). Owned by the High Harvest project."
+      "peakMomentaryDb": -34.0,
+      "truePeakDbtp": -24.93,
+      "source": "scripts/audio/footsteps.py from Fantozzi-StoneL2 (CC0 recording)",
+      "licence": "CC0 1.0 Universal (public domain dedication); no attribution required. Processed for High Harvest by PIXEL."
     },
     {
       "key": "sfx_footstep_path_2",
@@ -643,10 +643,10 @@
       "bytes": 3448,
       "fileDurationSec": 0.22,
       "loop": false,
-      "peakMomentaryDb": -21.01,
-      "truePeakDbtp": -8.81,
-      "source": "scripts/audio/sfx.py",
-      "licence": "Original work created for High Harvest; synthesised entirely in code by scripts/audio (no samples, recordings, loops or third-party presets). Owned by the High Harvest project."
+      "peakMomentaryDb": -34.0,
+      "truePeakDbtp": -25.58,
+      "source": "scripts/audio/footsteps.py from Fantozzi-StoneL3 (CC0 recording, speed x0.98)",
+      "licence": "CC0 1.0 Universal (public domain dedication); no attribution required. Processed for High Harvest by PIXEL."
     },
     {
       "key": "sfx_footstep_path_3",
@@ -660,10 +660,10 @@
       "bytes": 3448,
       "fileDurationSec": 0.22,
       "loop": false,
-      "peakMomentaryDb": -21.01,
-      "truePeakDbtp": -7.5,
-      "source": "scripts/audio/sfx.py",
-      "licence": "Original work created for High Harvest; synthesised entirely in code by scripts/audio (no samples, recordings, loops or third-party presets). Owned by the High Harvest project."
+      "peakMomentaryDb": -34.0,
+      "truePeakDbtp": -25.67,
+      "source": "scripts/audio/footsteps.py from Fantozzi-StoneR2 (CC0 recording)",
+      "licence": "CC0 1.0 Universal (public domain dedication); no attribution required. Processed for High Harvest by PIXEL."
     },
     {
       "key": "sfx_footstep_path_4",
@@ -677,10 +677,10 @@
       "bytes": 3448,
       "fileDurationSec": 0.22,
       "loop": false,
-      "peakMomentaryDb": -21.0,
-      "truePeakDbtp": -10.79,
-      "source": "scripts/audio/sfx.py",
-      "licence": "Original work created for High Harvest; synthesised entirely in code by scripts/audio (no samples, recordings, loops or third-party presets). Owned by the High Harvest project."
+      "peakMomentaryDb": -34.0,
+      "truePeakDbtp": -23.99,
+      "source": "scripts/audio/footsteps.py from Fantozzi-StoneR3 (CC0 recording, speed x1.02)",
+      "licence": "CC0 1.0 Universal (public domain dedication); no attribution required. Processed for High Harvest by PIXEL."
     },
     {
       "key": "sfx_harvest_1",
