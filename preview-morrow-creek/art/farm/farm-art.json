@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "enabled": true,
+  "groundRes": 3,
+  "ground": "ground.webp",
+  "groundHasStamps": true,
+  "textures": {
+    "house": "house.webp",
+    "shed": "shed.webp",
+    "well": "well.webp",
+    "tree": "tree.webp",
+    "tree-b": "tree-b.webp",
+    "tree-c": "tree-c.webp"
+  },
+  "glows": [[137, 140], [213, 140], [470, 226]],
+  "credits": "Painted farm plate and sprites by PIXEL (PR #30, cf3bc56): original AI-generated artwork made for High Harvest from the owner-approved Bush Garden B concept; sources and compose scripts in scripts/art/. No third-party assets. Spec: docs/build3/visual-pipeline.md."
+}
