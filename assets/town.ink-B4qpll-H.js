@@ -1,8 +1,8 @@
-const n=21,e=[["ev",{"VAR?":"who"},"str","^jo","/str","==","/ev",[{"->":".^.b",c:!0},{b:["^ ",{"->":"jo"},{"->":"0.8"},null]}],"nop",`
+const o=21,e=[["ev",{"VAR?":"who"},"str","^jo","/str","==","/ev",[{"->":".^.b",c:!0},{b:["^ ",{"->":"jo"},{"->":"0.8"},null]}],"nop",`
 `,"ev",{"VAR?":"who"},"str","^mara","/str","==","/ev",[{"->":".^.b",c:!0},{b:["^ ",{"->":"mara_garden"},{"->":"0.18"},null]}],"nop",`
 `,{"->":"kit"},["done",{"#n":"g-0"}],null],"done",{kit:[["ev",{"VAR?":"kit_met"},"/ev",[{"->":".^.b",c:!0},{b:["^ ",{"->":"kit_again"},{"->":"kit.0.4"},null]}],"nop",`
-`,"#","^kit_met","/#","^Oh! You're the one who bought the old Harlow place. Welcome to the Bend.",`
-`,"^I'm Kit. I volunteer here at the co-op, which mostly means I know where the twine is.",`
+`,"#","^kit_met","/#","^Oh! You're the one who bought the old Harlow place. Welcome to Morrow Creek.",`
+`,"^I'm Kit. I work the counter here at the Emporium, which mostly means I know where the twine is.",`
 `,"^Seeds, feed and the till are inside. Same prices as the farm gate, we don't do tourist prices.",`
 `,"ev","str","^What was the Harlow place like?","/str","/ev",{"*":".^.c-0",flg:4},"ev","str","^Thanks, Kit.","/str","/ev",{"*":".^.c-1",flg:4},{"c-0":[`
 `,"^Before my time, honestly. Jo at the Slow Kettle would know. She knows everyone's grandparents.",`
@@ -10,7 +10,7 @@ const n=21,e=[["ev",{"VAR?":"who"},"str","^jo","/str","==","/ev",[{"->":".^.b",c
 `,{"->":"kit_bye"},null]}],null],kit_again:[["ev",{"VAR?":"rocks"},{"VAR?":"jo_told"},"!","&&","/ev",{"->":".^.b",c:!0},{b:[`
 `,"^Rocks with a draught coming out? Huh. Ask Jo. That's exactly her sort of thing.",`
 `,{"->":".^.^.^.4"},null]}],["ev",{"VAR?":"board"},"/ev",{"->":".^.b",c:!0},{b:[`
-`,["ev","visit",2,"seq","/ev","ev","du",0,"==","/ev",{"->":".^.s0",c:!0},"ev","du",1,"==","/ev",{"->":".^.s1",c:!0},"nop",{s0:["pop",`^"A.H."? There's a Tom Harlow on the old honour board up at the hall. 1890s, I think. Can't be him, though, can it?`,{"->":".^.^.17"},null],s1:["pop","^The Harlows go back a long way round here. Longer than the co-op, and that's saying something.",{"->":".^.^.17"},null],"#f":5}],`
+`,["ev","visit",2,"seq","/ev","ev","du",0,"==","/ev",{"->":".^.s0",c:!0},"ev","du",1,"==","/ev",{"->":".^.s1",c:!0},"nop",{s0:["pop",`^"A.H."? There's a Tom Harlow on the old honour board up at the hall. 1890s, I think. Can't be him, though, can it?`,{"->":".^.^.17"},null],s1:["pop","^The Harlows go back a long way round here. Longer than the Emporium, and that's saying something.",{"->":".^.^.17"},null],"#f":5}],`
 `,{"->":".^.^.^.4"},null]}],["ev",{"VAR?":"gardened"},"/ev",{"->":".^.b",c:!0},{b:[`
 `,"^Garden's looking better for your help. Mara reckons you've got the knack.",`
 `,{"->":".^.^.^.4"},null]}],[{"->":".^.b"},{b:[`
@@ -45,4 +45,4 @@ const n=21,e=[["ev",{"VAR?":"who"},"str","^jo","/str","==","/ev",[{"->":".^.b",c
 `,"^Oh, hello. You found the garden. Grab a trowel if you like. The beds by the gate need the most love.",`
 `,{"->":".^.^.^.2"},null]}],"nop",`
 `,"ev",{"VAR?":"prior_choice"},"str","^quiet_corner","/str","==","/ev",[{"->":".^.b",c:!0},{b:["^ Kit's got offcuts for chimes, if your quiet corner wants a bit of noise. ",{"->":".^.^.^.13"},null]}],[{"->":".^.b"},{b:["^ One bed at a time. That's the whole trick. ",{"->":".^.^.^.13"},null]}],"nop",`
-`,"end",null],"global decl":["ev","str","^kit","/str",{"VAR=":"who"},!1,{"VAR=":"kit_met"},!1,{"VAR=":"jo_met"},!1,{"VAR=":"rocks"},!1,{"VAR=":"board"},!1,{"VAR=":"jo_told"},!1,{"VAR=":"gardened"},"str","^none","/str",{"VAR=":"invite"},"str","^none","/str",{"VAR=":"prior_choice"},"/ev","end",null]}],t={},o={inkVersion:21,root:e,listDefs:t};export{o as default,n as inkVersion,t as listDefs,e as root};
+`,"end",null],"global decl":["ev","str","^kit","/str",{"VAR=":"who"},!1,{"VAR=":"kit_met"},!1,{"VAR=":"jo_met"},!1,{"VAR=":"rocks"},!1,{"VAR=":"board"},!1,{"VAR=":"jo_told"},!1,{"VAR=":"gardened"},"str","^none","/str",{"VAR=":"invite"},"str","^none","/str",{"VAR=":"prior_choice"},"/ev","end",null]}],t={},n={inkVersion:21,root:e,listDefs:t};export{n as default,o as inkVersion,t as listDefs,e as root};
