@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "enabled": true,
+  "regions": {
+    "west_meadow": {
+      "dir": "west-meadow",
+      "groundRes": 3,
+      "ground": "ground-3x.webp",
+      "farmGums": true,
+      "textures": {
+        "west-fence": "west-fence.webp",
+        "gate-closed": "gate-closed.webp",
+        "gate-open": "gate-open.webp",
+        "granite": "granite.webp",
+        "log": "log.webp",
+        "cairn": "cairn.webp",
+        "land-sign": "land-sign.webp",
+        "land-sign-owned": "land-sign-owned.webp",
+        "bed-soil": "bed-soil.webp",
+        "bed-overgrown": "bed-overgrown.webp",
+        "clr-branch": "clr-branch.webp",
+        "clr-rock": "clr-rock.webp",
+        "clr-bush": "clr-bush.webp"
+      },
+      "overlays": {
+        "farm-west-gate": "farm-west-gate.webp"
+      }
+    },
+    "greygum_gully": {
+      "dir": "greygum-gully",
+      "groundRes": 3,
+      "ground": "ground-3x.webp",
+      "farmGums": true,
+      "sharedProps": true,
+      "textures": {
+        "wl-margin": "margin.webp",
+        "wl-wattle": "wl-wattle.webp",
+        "wl-correa": "wl-correa.webp",
+        "wl-teatree": "wl-teatree.webp",
+        "wl-stump": "wl-stump.webp",
+        "wl-post": "wl-post.webp",
+        "wl-bench": "wl-bench.webp"
+      }
+    },
+    "banksia_bend": {
+      "dir": "banksia-bend",
+      "groundRes": 3,
+      "ground": "ground-3x.webp",
+      "farmGums": true,
+      "textures": {
+        "tn-fig": "tn-fig.webp",
+        "tn-kombi": "tn-kombi.webp",
+        "tn-stall": "tn-stall.webp",
+        "tn-notice": "tn-notice.webp",
+        "tn-sign": "tn-sign.webp",
+        "tn-chalk": "tn-chalk.webp",
+        "tn-post-coop": "tn-post-coop.webp",
+        "tn-post-cafe": "tn-post-cafe.webp",
+        "tn-post-pole": "tn-post-pole.webp",
+        "tn-bunting": "tn-bunting.webp"
+      },
+      "overlays": {
+        "town-signs": "signs.webp"
+      }
+    }
+  },
+  "credits": "Painted West Meadow by PIXEL: original AI-generated artwork made for High Harvest in the style of the owner-approved painted Build 3 farm; the track reuses the farm plate's painted path. Sources and scripts in scripts/art/ (compose_meadow_plate.py, process_meadow_sprites.py). No third-party assets. Spec: docs/world-art/inventory-and-plan.md. Painted Greygum Gully by PIXEL, the same way: original AI-generated floor, bush, gully view and props (scripts/art/compose_gully_plate.py, process_gully_sprites.py); gums, granite and logs reuse the shared painted farm/meadow art. The farm-side gate correction (farm-west-gate.webp, compose_west_gate_patch.py) is a masked overlay built from the farm plate's own grass and the meadow track; the farm plate file is unchanged. Painted Banksia Bend by PIXEL, the same way: original AI-generated town plate and props; posts and bunting are drawn in code (scripts/art/compose_town_plate.py, process_town_sprites.py); sign, mural and chalkboard lettering is drawn in code (compose_town_signs.py, DejaVu Sans, Bitstream Vera licence); its gums reuse the shared painted farm gums."
+}
